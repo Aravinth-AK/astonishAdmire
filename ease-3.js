@@ -1,12 +1,3 @@
-/*!
- * CustomEase 3.8.0
- * https://greensock.com
- * 
- * @license Copyright 2021, GreenSock. All rights reserved.
- * Subject to the terms at https://greensock.com/standard-license or for Club GreenSock members, the agreement issued with that membership.
- * @author: Jack Doyle, jack@greensock.com
- */
-
 !function(e, t) {
     "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t((e = e || self).window = e.window || {})
 }(this, function(e) {
@@ -369,7 +360,7 @@
         this.id = e,
         a && this.setData(t, n)
     }
-    p() && y.registerPlugin(n),
+    p(),
     n.version = "3.8.0",
     e.CustomEase = n,
     e.default = n;

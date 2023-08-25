@@ -1,3 +1,4 @@
+
 !function(e, t) {
     "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t((e = e || self).window = e.window || {})
 }(this, function(e) {
@@ -295,8 +296,7 @@
     }
     ,
     CustomEase.register = function register(e) {
-        y = e,
-        q()
+      return;
     }
     ,
     CustomEase.get = function get(e) {
@@ -356,19 +356,8 @@
     ,
     CustomEase);
     function CustomEase(e, t, n) {
-        i || q(),
+        i,
         this.id = e,
         a && this.setData(t, n)
-    }
-    p(),
-    n.version = "3.8.0",
-    e.CustomEase = n,
-    e.default = n;
-    if (typeof (window) === "undefined" || window !== e) {
-        Object.defineProperty(e, "__esModule", {
-            value: !0
-        })
-    } else {
-        delete e.default
     }
 });

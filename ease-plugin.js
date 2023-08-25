@@ -1,8 +1,6 @@
-
 !function(n, e) {
     "object" == typeof exports && "undefined" != typeof module ? e(exports) : "function" == typeof define && define.amd ? define(["exports"], e) : e((n = n || self).window = n.window || {})
 }(this, function(e) {
-    "use strict";
     function g() {
         return a || "undefined" != typeof window && (a = window.gsap) && a.registerPlugin && a
     }
@@ -10,19 +8,7 @@
         return n
     }
     function j(n) {
-        if (!y)
-            if (a = g(),
-            C = a && a.parseEase("_CE")) {
-                for (var e in W)
-                    W[e] = C("", W[e]);
-                y = 1,
-                t("wiggle").config = function(n) {
-                    return "object" == typeof n ? t("", n) : t("wiggle(" + n + ")", {
-                        wiggles: +n
-                    })
-                }
-            } else
-                n && console.warn("Please gsap.registerPlugin(CustomEase, CustomWiggle)")
+       return;
     }
     function k(e, n) {
         return "function" != typeof e && (e = a.parseEase(e) || C("", e)),
@@ -90,8 +76,7 @@
     }
     ,
     CustomWiggle.register = function register(n) {
-        a = n,
-        j()
+       return;
     }
     ,
     CustomWiggle);
@@ -102,11 +87,4 @@
     o.version = "3.11.6",
     e.CustomWiggle = o,
     e.default = o;
-    if (typeof (window) === "undefined" || window !== e) {
-        Object.defineProperty(e, "__esModule", {
-            value: !0
-        })
-    } else {
-        delete e.default
-    }
 });

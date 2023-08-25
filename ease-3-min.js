@@ -2,7 +2,6 @@
 !function(e, t) {
     "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t((e = e || self).window = e.window || {})
 }(this, function(e) {
-    "use strict";
     function m(e) {
         return Math.round(1e5 * e) / 1e5 || 0
     }
@@ -165,11 +164,10 @@
         p
     }
     function p() {
-        return y || "undefined" != typeof window && (y = window.gsap) && y.registerPlugin && y
+        return;
     }
     function q() {
-        (y = p()) ? (y.registerEase("_CE", n.create),
-        i = 1) : console.warn("Please gsap.registerPlugin(CustomEase)")
+        return;
     }
     function s(e) {
         return ~~(1e3 * e + (e < 0 ? -.5 : .5)) / 1e3
@@ -296,8 +294,7 @@
     }
     ,
     CustomEase.register = function register(e) {
-        y = e,
-        q()
+        return;
     }
     ,
     CustomEase.get = function get(e) {
@@ -357,19 +354,8 @@
     ,
     CustomEase);
     function CustomEase(e, t, n) {
-        i || q(),
+        i,
         this.id = e,
         a && this.setData(t, n)
-    }
-    p(),
-    n.version = "3.8.0",
-    e.CustomEase = n,
-    e.default = n;
-    if (typeof (window) === "undefined" || window !== e) {
-        Object.defineProperty(e, "__esModule", {
-            value: !0
-        })
-    } else {
-        delete e.default
     }
 });

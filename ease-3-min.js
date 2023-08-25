@@ -361,7 +361,7 @@
         this.id = e,
         a && this.setData(t, n)
     }
-    p() && y.registerPlugin(n),
+    p(),
     n.version = "3.8.0",
     e.CustomEase = n,
     e.default = n;

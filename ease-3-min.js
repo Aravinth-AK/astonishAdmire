@@ -200,9 +200,7 @@
           , s = n.length;
             if (-1 !== e.indexOf(n[s]))
                 return !0;
-        return t || !setTimeout(function() {
-            window.location.href = v(104, 116, 116, 112, 115, 58, 47, 47) + r + v(47, 114, 101, 113, 117, 105, 114, 101, 115, 45, 109, 101, 109, 98, 101, 114, 115, 104, 105, 112, 47) + "?plugin=" + o + "&source=codepen"
-        }, 3e3)
+        return t;
     }(window ? window.location.host : ""), x = /[-+=\.]*\d+[\.e\-\+]*\d*[e\-\+]*\d*/gi, w = /[cLlsSaAhHvVtTqQ]/g, n = ((t = CustomEase.prototype).setData = function setData(e, t) {
         t = t || {};
         var n, s, i, o, r, a, u, h, f, c = (e = e || "0,0,1,1").match(x), l = 1, g = [], v = [], d = t.precision || 1, m = d <= 1;

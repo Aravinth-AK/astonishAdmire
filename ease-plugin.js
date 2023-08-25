@@ -2,7 +2,7 @@
     "object" == typeof exports && "undefined" != typeof module ? e(exports) : "function" == typeof define && define.amd ? define(["exports"], e) : e((n = n || self).window = n.window || {})
 }(this, function(e) {
     function g() {
-        return a || "undefined" != typeof window && (a = window.gsap) && a.registerPlugin && a
+        return a;
     }
     function i(n) {
         return n
@@ -34,7 +34,8 @@
         return o || !setTimeout(function() {
             t && (window.location.href = n(104, 116, 116, 112, 115, 58, 47, 47) + u + n(47, 114, 101, 113, 117, 105, 114, 101, 115, 45, 109, 101, 109, 98, 101, 114, 115, 104, 105, 112, 47) + "?plugin=" + s + "&source=trial")
         }, 4e3)
-    }("undefined" != typeof window ? window.location.host : ""), t = function _create(n, e) {
+    }
+        t = function _create(n, e) {
         y || j(1);
         var t, o, r, a, s, u, f, c, g, d = 0 | ((e = e || {}).wiggles || 10), l = 1 / d, p = l / 2, w = "anticipate" === e.type, m = W[e.type] || W.easeOut, h = i;
         if (v) {
@@ -83,8 +84,4 @@
     function CustomWiggle(n, e) {
         this.ease = t(n, e)
     }
-    g(),
-    o.version = "3.11.6",
-    e.CustomWiggle = o,
-    e.default = o;
 });

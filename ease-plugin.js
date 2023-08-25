@@ -1,14 +1,3 @@
-/*!
- * CustomWiggle 3.11.6
- * https://greensock.com
- * 
- * @license Copyright 2023, GreenSock. All rights reserved.
- * *** DO NOT DEPLOY THIS FILE ***
- * This is a trial version that only works locally and on domains like codepen.io and codesandbox.io.
- * Loading it on an unauthorized domain violates the license and will cause a redirect.
- * Get the unrestricted file by joining Club GreenSock at https://greensock.com/club
- * @author: Jack Doyle, jack@greensock.com
- */
 
 !function(n, e) {
     "object" == typeof exports && "undefined" != typeof module ? e(exports) : "function" == typeof define && define.amd ? define(["exports"], e) : e((n = n || self).window = n.window || {})
@@ -109,7 +98,7 @@
     function CustomWiggle(n, e) {
         this.ease = t(n, e)
     }
-    g() && a.registerPlugin(o),
+    g(),
     o.version = "3.11.6",
     e.CustomWiggle = o,
     e.default = o;
